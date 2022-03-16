@@ -1,5 +1,11 @@
 # All About OS
 
+## Technical Terms
+
+| Term | Description |
+| ---- | ----------- |
+| Batch | 批次，一批接者一批執行 |
+
 ## References
 
 1. https://www.youtube.com/playlist?list=PLS0SUwlYe8czigQPzgJTH2rJtwm0LXvDX
