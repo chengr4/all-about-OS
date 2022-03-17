@@ -4,7 +4,7 @@
 
 | Term | Description |
 | ---- | ----------- |
-| Batch | 批次，一批接者一批執行 |
+| Batch | 批次，one time a job |
 
 ## References
 

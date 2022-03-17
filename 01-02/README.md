@@ -15,8 +15,14 @@
 
 - 最早的電腦 (1954)
 - Slow I/O
-- Evolution: Batch => Multi-programming => Time-shared
-- 現在，Mainframe 指處理特定事物的機器
+- Evolution:
+
+```mermaid
+flowchart LR
+1([Batch])-->2([Multi-programming])-->3([Time-sharing])
+```
+
+- 現在 (2017)，Mainframe 指處理特定事物的機器
 
 #### Batch Systems
 
@@ -32,4 +38,25 @@ Drawbacks (缺點):
 
 #### Multi-programming
 
-#### Time-shared
+Target:  enhance CPU usage rate
+
+Keep both CPU and I/O devices working at higher rates: A 程式在 I/O 時讓 B 程式使用 CPU
+
+- SPOOLing (Simultaneous Peripheral Operation On-Line)
+    - I/O 獨立運作 (無 CPU 干涉)
+    - CPU need notifying when I/O is done
+- Implementation: memory management + CPU scheduling + I/O system
+
+#### Time-sharing
+
+Target: Create an interative system + multiple users at the same 
+
+- CPU frequently monitors I/O devices (E.g. keyboard)
+- switch jobs
+- Implementation: Virtual memory + File system + Process synchronization and deadlock
+
+#### Summary
+| \ | Batch | Multiprogramming | Time-sharing |
+| - | ----- | ---------------- | ------------ |
+| System Model | Single user Single job | multi prog. | multi prog., user |
+| Purpose | Simple | 增加資源使用率 | Interactive + Response time |
