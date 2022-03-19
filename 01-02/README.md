@@ -9,7 +9,7 @@
 - Computer-system architecture
 - Special-purpose Systems
 
-### Mainframe Systems
+## Mainframe Systems
 
 > mainframe: 體積很大
 
@@ -24,7 +24,7 @@ flowchart LR
 
 - 現在 (2017)，Mainframe 指處理特定事物的機器
 
-#### Batch Systems
+### Batch Systems
 
 > **Batch**: 批次，一批接者一批執行
 
@@ -36,7 +36,7 @@ Drawbacks (缺點):
 
 > I/O speed << CPU speed is still a problem now (2022)
 
-#### Multi-programming
+### Multi-programming
 
 Target:  enhance CPU usage rate
 
@@ -47,7 +47,7 @@ Keep both CPU and I/O devices working at higher rates: A 程式在 I/O 時讓 B 
     - CPU need notifying when I/O is done
 - Implementation: memory management + CPU scheduling + I/O system
 
-#### Time-sharing
+### Time-sharing
 
 Target: Create an interative system + multiple users at the same 
 
@@ -55,8 +55,34 @@ Target: Create an interative system + multiple users at the same
 - switch jobs
 - Implementation: Virtual memory + File system + Process synchronization and deadlock
 
-#### Summary
+### Summary
 | \ | Batch | Multiprogramming | Time-sharing |
 | - | ----- | ---------------- | ------------ |
 | System Model | Single user Single job | multi prog. | multi prog., user |
 | Purpose | Simple | 增加資源使用率 | Interactive + Response time |
+
+## Computer-system architecture
+
+- Desktop Systems
+- Parallel Systems
+- Distributed Systems
+
+### Desktop System: Personal Computers
+
+- I/O devieces: keyboard, mice, screen, printer
+
+### Parallel Systems
+
+aka multiprocessor or tightly coupled system
+
+- More thaen one CPU/core
+- Usually communicate through **shared memory**
+- Symmetric multiprocessor system (SMP)
+    - processor 對等
+    - 不易 scale
+    - require **extensive sychronization** yo protect data integrity
+- Aymmetric multiprocessor system (AMP)
+    - master-slave
+    - for specific tasks
+
+## Special-purpose Systems
