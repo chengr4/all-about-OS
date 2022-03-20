@@ -38,28 +38,29 @@ Drawbacks (缺點):
 
 ### Multi-programming
 
-Target:  enhance CPU usage rate
+Target: enhance CPU usage rate
 
 Keep both CPU and I/O devices working at higher rates: A 程式在 I/O 時讓 B 程式使用 CPU
 
 - SPOOLing (Simultaneous Peripheral Operation On-Line)
-    - I/O 獨立運作 (無 CPU 干涉)
-    - CPU need notifying when I/O is done
+  - I/O 獨立運作 (無 CPU 干涉)
+  - CPU need notifying when I/O is done
 - Implementation: memory management + CPU scheduling + I/O system
 
 ### Time-sharing
 
-Target: Create an interative system + multiple users at the same 
+Target: Create an interative system + multiple users at the same
 
 - CPU frequently monitors I/O devices (E.g. keyboard)
 - switch jobs
 - Implementation: Virtual memory + File system + Process synchronization and deadlock
 
 ### Summary
-| \ | Batch | Multiprogramming | Time-sharing |
-| - | ----- | ---------------- | ------------ |
-| System Model | Single user Single job | multi prog. | multi prog., user |
-| Purpose | Simple | 增加資源使用率 | Interactive + Response time |
+
+| \            | Batch                  | Multiprogramming | Time-sharing                |
+| ------------ | ---------------------- | ---------------- | --------------------------- |
+| System Model | Single user Single job | multi prog.      | multi prog., user           |
+| Purpose      | Simple                 | 增加資源使用率   | Interactive + Response time |
 
 ## Computer-system architecture
 
@@ -78,11 +79,31 @@ aka multiprocessor or tightly coupled system
 - More thaen one CPU/core
 - Usually communicate through **shared memory**
 - Symmetric multiprocessor system (SMP)
-    - processor 對等
-    - 不易 scale
-    - require **extensive sychronization** yo protect data integrity
+  - processor 對等
+  - 不易 scale
+  - require **extensive sychronization** yo protect data integrity
 - Aymmetric multiprocessor system (AMP)
-    - master-slave
-    - for specific tasks
+  - master-slave
+  - for specific tasks
+-  (memory picture) Uniform Memory Access (UMA):
+
+```mermaid
+  erDiagram
+    Memory ||--|{ CPU : has
+```
+
+### Distributed Systems
+
+- Each processor has its own local memory
+- client-server, peer-to-peer
+
+Purposes:
+
+- 分擔工作 (load sharing)
+- Reliability: all computers are independent
+
+#### Clustered Systems
+
+Definition: Cluster computers share storage and are closely linked via a local area network or a faster interconnect, such as InfiniBand (up to 300Gb/s)
 
 ## Special-purpose Systems

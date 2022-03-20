@@ -5,6 +5,7 @@
 | Term | Description |
 | ---- | ----------- |
 | Batch | 批次，one time a job |
+| idle |  閒置 |
 
 ## References
 
