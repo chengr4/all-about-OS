@@ -107,3 +107,22 @@ Purposes:
 Definition: Cluster computers share storage and are closely linked via a local area network or a faster interconnect, such as InfiniBand (up to 300Gb/s)
 
 ## Special-purpose Systems
+
+> user picture
+
+- Real-Time Systems
+  - DOES NOT mean speed
+  - Finish job before deadlines (fixed-time)
+  - E.g. industrial control systems, weapon systems
+- Multimedia Systems
+  - Applications including audio and video files
+  - Timing constraints: 30 frames/sec
+  - Live streaming: media file is only played but not stored
+  - Compression issue
+- Handheld/Embedded Systems
+  - iPhone, PDAs
+  - Hardware specialized OS
+  - Battery consumption issue
+
+
+
