@@ -39,3 +39,57 @@
 - Distributed system
 
 > one way: give up consistency because users do not have feeling of it
+
+# Hardware Protection
+
+> not security
+
+- Dual-Mode Operation: 區分 os and user program
+- I/O Protection
+- Memory Protection
+- CPU Protection
+
+## Dual-Mode Operation
+
+### What ot protect?
+
+Sharing system resources requires OS to ensure that an incorrect program cannot cause other program to execute incorrectly (application 間不互相影響)
+
+---
+
+- User mode: excution done on behalf of a user (OS 之外)
+- Monitor mode: excution done on behalf of OS
+
+> Use mode bit: kernal (0), user (1)
+
+```mermaid
+  flowchart LR
+    Monitor -->|set user mode| User
+    User -->|Interrupt/fault| Monitor
+```
+
+- Privileged instructions 
+  - Must exe at monitor mode
+  - So users make requests (system calls)
+
+## I/O Protection
+
+- All I/O instructions are privileged instructions
+
+## Memory Protection
+
+- To protect
+  - Interrupt vector and the interrupt service routines
+  - Data access and over-write from other programs
+- HW support:
+  - Base register: start point
+  - Limit register: how long
+
+  > Memory outside the defined range is protected (無效)
+
+## CPU Protection
+
+- 防止程式霸佔 CPU
+- HW support: **Timer** -- interrupts computer after specified period
+  - Timer 倒數計時，When Timer reaches the value 0, an interrupt occurs
+- Load-timer (override) is a privileged instrcution
