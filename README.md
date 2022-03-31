@@ -7,6 +7,7 @@
 | Batch | 批次，one time a job |
 | idle |  閒置 |
 | volatile | 斷電即遺失 |
+| userprog | user program |
 
 ## References
 
