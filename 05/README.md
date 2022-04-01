@@ -9,7 +9,7 @@
 
 - OS Services
 - OS Application Interface (API and System call are different)
-- OS Structure
+- OS System Structure
 
 ## OS Services
 
@@ -54,10 +54,29 @@ OS 提供的 function call
 
 ---
 
+## OS System Structure
 
+- Simple OS Architecture
+  - Only one or two levels of code
+  - Drawbacks: unsafe, difficult to enhance
+- Layer OS Architecture
+  - Loser levels independent of upper levels
+  - Upper layer can call lower layer's API, but Lower layer cannot call upper layer's API
+  - Pros: Easier maintenance
+  - Cons: Less efficient, difficult to define layers
+- Microkernal OS
+  - Modulize
+  - Kernel, the smaller the better
+  - Communication if provided by **message passing**
+- Modular OS Structure
+- Virtual Machine
+- Java Virtual Machine
 
-## OS Structure
+## Modular OS Structure
 
+- Most modern OS implement kernel modules
+  - OO design
+  - Each core component os separate
+  - Each talks to the others over known interfaces
 
-
-
+E.g. Solaris
