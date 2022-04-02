@@ -65,7 +65,7 @@ OS 提供的 function call
   - Pros: Easier maintenance
   - Cons: Less efficient, difficult to define layers
 - Microkernal OS
-  - Modulize
+  - Modulize (module 可替換, userspace)
   - Kernel, the smaller the better
   - Communication if provided by **message passing**
 - Modular OS Structure
