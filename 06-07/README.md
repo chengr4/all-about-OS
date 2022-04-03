@@ -45,3 +45,24 @@
   - class verifier
   - runtime interpreter
 - JIT (Just in time)
+
+# Processes
+
+## Process Concept
+
+**Process vs Program**
+
+- Program: (passive entity) Binary stored in disk
+- Process: (active entity) A program in execution in memory
+
+A precess includes:
+
+- Compiled code segment (text section )
+- Data section: global variables
+- Stack: temporary local variables and functions
+- Heap: dynamic allocated variables or classes
+- Current activity (program counter, register contents)
+
+> program counter: meta data where process executes
+
+- A set of associated resources (e.g. open file handlers)
