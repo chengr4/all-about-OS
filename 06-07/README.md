@@ -86,7 +86,7 @@ States:
     Ready --> Running: OS scheduler dispatch
     Running --> Ready: interrupt
     Running --> Waiting: I/O or event wait
-    Wait --> Ready: I/O or event completion
+    Waiting --> Ready: I/O or event completion
     Running --> Terminated: exit
 ```
 
