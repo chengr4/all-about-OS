@@ -1,5 +1,7 @@
 # All About OS
 
+- Memory related: 04
+
 ## Technical Terms
 
 | Term | Description |
@@ -8,6 +10,20 @@
 | idle |  閒置 |
 | volatile | 斷電即遺失 |
 | userprog | user program |
+| overhead | 浪費 |
+
+## Thread vs Process
+
+| Thread | Process |
+| ------ | ------- |
+
+### Thread
+
+> lightweight process
+
+- All threads belonging to the same process share 1. code section, 2. data section, 3. OS resources (eg open files and signals)
+
+> == Global variable
 
 ## References
 

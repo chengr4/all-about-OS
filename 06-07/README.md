@@ -55,9 +55,9 @@
 - Program: (passive entity) Binary stored in disk
 - Process: (active entity) A program in execution in memory
 
-A precess includes:
+A process includes:
 
-- Compiled code segment (text section )
+- Compiled code segment (text section): 程式碼
 - Data section: global variables
 - Stack: temporary local variables and functions
 - Heap: dynamic allocated variables or classes
@@ -66,3 +66,46 @@ A precess includes:
 > program counter: meta data where process executes
 
 - A set of associated resources (e.g. open file handlers)
+
+![Process in Memory](../images/process-in-memory.png)
+
+## Process State
+
+States:
+
+- New: The process is being created
+- Ready: the process is in the memory waiting to be assigned to a processor
+- Running: instruction are being executed by CPU
+- Waiting: the process is waiting for events to occur
+- Terminated: the process has finished execution
+
+```mermaid
+  stateDiagram-v2
+    New --> Crash: out of memory
+    New --> Ready: admitted
+    Ready --> Running: OS scheduler dispatch
+    Running --> Ready: interrupt
+    Running --> Waiting: I/O or event wait
+    Wait --> Ready: I/O or event completion
+    Running --> Terminated: exit
+```
+
+### Process Control Block (PCB)
+
+- OS created instance
+- saved in kernal's own memory
+- include: process state, CPU registers, program counter, ...etc.
+
+
+### Context Switch
+
+Switch a process in CPU to an another process
+
+![Context Switch](../images/context-switch.png)
+
+- Content Switch == PCB load and save
+- Overhead (浪費) action
+- Switch time (1~1000 ms) depends on
+  - memory speed
+  - number of registers
+  - hardware support: multiple sets of registers
