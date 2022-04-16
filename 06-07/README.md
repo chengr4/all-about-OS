@@ -76,7 +76,7 @@ States:
 - New: The process is being created
 - Ready: the process is in the memory waiting to be assigned to a processor
 - Running: instruction are being executed by CPU
-- Waiting: the process is waiting for events to occur
+- Waiting: the process is waiting for events to occur (I/O request, time slice expired, fork a child, wait for interrupt)
 - Terminated: the process has finished execution
 
 ```mermaid
@@ -109,3 +109,9 @@ Switch a process in CPU to an another process
   - memory speed
   - number of registers
   - hardware support: multiple sets of registers
+
+## Process Scheduling
+
+- Processes migrate between the various queues => Job queue (new state), Ready queue, Device queue (wait state)
+- 用 pointer 串連 
+

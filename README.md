@@ -12,6 +12,10 @@
 | userprog | user program |
 | overhead | 浪費 |
 
+## Important concepts
+
+- Two Interrupt types: System call (software trigger), Signal (Hareware trigger)
+
 ## Thread vs Process
 
 | Thread | Process |
