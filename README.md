@@ -16,6 +16,10 @@
 
 - Two Interrupt types: System call (software trigger), Signal (Hareware trigger)
 
+## Memopry
+
+- https://sysprog21.github.io/cpumemory-zhtw/
+
 ## Thread vs Process
 
 | Thread | Process |
