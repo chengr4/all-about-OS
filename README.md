@@ -1,7 +1,5 @@
 # All About OS
 
-- Memory related: 04
-
 ## Technical Terms
 
 | Term | Description |
@@ -16,8 +14,8 @@
 
 - Two Interrupt types: System call (software trigger), Signal (Hareware trigger)
 
-## Memopry
-
+## Memory
+- Memory related: 04
 - https://sysprog21.github.io/cpumemory-zhtw/
 
 ## Thread vs Process
