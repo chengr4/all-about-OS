@@ -64,3 +64,12 @@ Most mordern OS combine medium-term scheduler with virtual memory
 ![Linux fork process](../images/linux-fork-process.png)
 
 > copy on write: in runtime, when sharing variables of child and parent are changing in child process, copy parent's variables to child (usage memory of child rises)
+
+## Process Termination
+
+- All resources of the process, including physical & virtual memory, open files, I/O buffers are **de-allocated by OS**
+- `exit()`, `abort()`
+
+> `abort()`: terminate specific children processes by its PID, only parent kills children
+
+- Cascading termination: kill exiting parent, kill all its children

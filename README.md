@@ -9,6 +9,7 @@
 | volatile | 斷電即遺失 |
 | userprog | user program |
 | overhead | 浪費 |
+| cascading | 瀑布般的 |
 
 ## Important concepts
 
