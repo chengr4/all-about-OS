@@ -73,3 +73,30 @@ Most mordern OS combine medium-term scheduler with virtual memory
 > `abort()`: terminate specific children processes by its PID, only parent kills children
 
 - Cascading termination: kill exiting parent, kill all its children
+
+## Interprocess Communication (IPC)
+
+IPC: a set of methods for the exchange of data among multiple threads in one or more processes
+
+Purposes:
+
+- information sharing
+- computation speedup (however not always true)
+- convenience (performs several tasks at one time)
+- modularity (eg micro kernal)
+
+### Communication Methods
+
+![Process Communication methods](../images//process-communication-methods.png)
+
+- Shared Memory
+  - Require more careful user synchronization
+  - faster
+  - Use memory address to access data
+  - with pointer
+- Message Passing
+  - memory copy
+  - more efficient for small data
+  - Use sned/receive MSG
+  - slower
+  - use system call
