@@ -32,6 +32,10 @@
 
 > == Global variable
 
+## Topics to Read
+
+1. [Understanding the bin, sbin, usr/bin , usr/sbin split](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html)
+
 ## References
 
 1. https://www.youtube.com/playlist?list=PLS0SUwlYe8czigQPzgJTH2rJtwm0LXvDX
