@@ -21,6 +21,8 @@
 
 ## Thread vs Process
 
+- 對作業系統來說， process 是資源分配的最小單位，並且同時是個「操作單位」
+
 | Thread | Process |
 | ------ | ------- |
 
