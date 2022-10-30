@@ -16,7 +16,7 @@
 - Two Interrupt types: System call (software trigger), Signal (Hareware trigger)
 
 ## Memory
-- Memory related: 04
+- Memory related: [Prof. Jerry Chou 04](./10510prof-jerry-chou-OS/04/README.md)
 - https://sysprog21.github.io/cpumemory-zhtw/
 
 ## Thread vs Process
@@ -37,8 +37,3 @@
 ## Topics to Read
 
 1. [Understanding the bin, sbin, usr/bin , usr/sbin split](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html)
-
-## References
-
-1. https://www.youtube.com/playlist?list=PLS0SUwlYe8czigQPzgJTH2rJtwm0LXvDX
-2. https://ocw.nthu.edu.tw/ocw/index.php?page=course_news_content&cid=141&id=999
