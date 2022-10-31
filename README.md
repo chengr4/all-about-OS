@@ -55,3 +55,7 @@ In Linux, There are two ways to implement zero-copy: `mmap + write` and `sendfil
 ## Topics to Read
 
 1. [Understanding the bin, sbin, usr/bin , usr/sbin split](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html)
+
+## References
+
+- [事件驅動伺服器：原理和實例](https://hackmd.io/@sysprog/event-driven-server)
