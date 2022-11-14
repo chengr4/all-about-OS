@@ -59,3 +59,4 @@ In Linux, There are two ways to implement zero-copy: `mmap + write` and `sendfil
 ## References
 
 - [事件驅動伺服器：原理和實例](https://hackmd.io/@sysprog/event-driven-server)
+- https://github.com/cccriscv/mini-riscv-os
