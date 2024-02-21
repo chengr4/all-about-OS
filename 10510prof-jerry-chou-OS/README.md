@@ -1,5 +1,7 @@
 # 10510 Prof. Jerry Chou - OS
 
+> Archive this folder
+
 ## References
 
 1. https://www.youtube.com/playlist?list=PLS0SUwlYe8czigQPzgJTH2rJtwm0LXvDX
