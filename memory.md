@@ -1,8 +1,13 @@
 # Memory
 
+- fixed partition and variable partition
+- We create virual memory to enhance the utilization rate of physical memory
+
 ## Page Table
 
 - Page table is kept in memory
+- Contains protection bit (E.g. read, write, execute, valid-invalid bit)
+- Can share pure code's pages among processes
 
 ## Translation Lookaside Buffer (TLB)
 
@@ -11,6 +16,14 @@
 - stored in MMU (hardware)
 - associative memory => parallel search
 - TLB must be flushed after a context switch
+
+## Segmentation
+
+> variable-size partitioning
+
+- Has a segmentation table
+
+
 
 ## References
 
