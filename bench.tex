@@ -1,0 +1,23 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsfonts, amssymb, amsmath}
+\usepackage{fullpage}
+\usepackage{parskip} % skip a line instead of indenting
+% \usepackage{graphicx} % for inserting images
+
+\title{Benchmark}
+\author{Feng Shih Cheng}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\subsection*{Demand Paging Performance}
+Effective Access Time (EAT): $(1 - p) \times ma + p \times \text{page fault time}$
+\begin{itemize}
+    \item $p$: probability of a page fault rate
+    \item $ma$: memory access time
+\end{itemize}
+
+Conclusion: The lower the page fault rate, the better the performance.
+
+\end{document}
