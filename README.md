@@ -12,6 +12,8 @@
 | userprog | user program |
 | overhead | 浪費 |
 | cascading | 瀑布般的 |
+| trashing | 越來越多 page fault 導致 CPU 使用率低下 |
+| locality | a set of pages that are actively used together |
 
 ## Important concepts
 

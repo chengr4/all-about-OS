@@ -24,7 +24,19 @@
 
 - Has a segmentation table
 
+## Page Replacement
 
+> Conditions: no free frame
+
+1. frame-allocation algorithm: Determines how many frames to allocate to a process
+2. page-replacement algorithm: Determines which page to replace
+    - FIFO
+    - Optimal (Belday) Algorithm (need future knowledge)
+    - LRU (Least Recently Used, looking backward)
+
+## Frame
+
+- Each process needs min number of frames
 
 ## References
 
