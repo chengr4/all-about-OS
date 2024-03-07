@@ -15,12 +15,20 @@ In Unix/Linux:
 
 ## Thread
 
-> lightweight process
+> aka. lightweight process
 
-- All threads belonging to the same process share: 
+- All threads belonging to the same process share (Global variable): 
     1. code section
     2. data section
     3. OS resources (eg open files and signals)
+- Each thread has its own thread control block: thread ID, program counter, register set, and a stack
 
-> == Global variable
+### User vs. Kernel Threads
 
+- many-to-one, one-to-one (common), many-to-many
+
+| User Thread | Kernel Thread |
+| --- | --- |
+| Thread library provides | kernel performs |
+| POSIX Pthreads, Win32 threads, Java threads | Window 2000 (NT), solaris, Linux, Tru Unix |
+| fast to create | slower |
