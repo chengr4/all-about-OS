@@ -32,3 +32,8 @@ In Unix/Linux:
 | Thread library provides | kernel performs |
 | POSIX Pthreads, Win32 threads, Java threads | Window 2000 (NT), solaris, Linux, Tru Unix |
 | fast to create | slower |
+
+### Thread Pools
+
+- Create a number of threads in a pool where they await work
+- pros: faster, size of pool can be bounded
