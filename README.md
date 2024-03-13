@@ -6,7 +6,7 @@
 
 | Term | Description |
 | ---- | ----------- |
-| Batch | 批次，one time a job |
+| batch | 批次，one time a job |
 | idle |  閒置 |
 | volatile | 斷電即遺失 |
 | userprog | user program |
@@ -14,6 +14,7 @@
 | cascading | 瀑布般的 |
 | trashing | 越來越多 page fault 導致 CPU 使用率低下 |
 | locality | a set of pages that are actively used together |
+| preemptive/non-preemptive | 打斷/不打斷 |
 
 ## Important concepts
 
@@ -34,3 +35,4 @@ In Linux, There are two ways to implement zero-copy: `mmap + write` and `sendfil
 - [事件驅動伺服器：原理和實例](https://hackmd.io/@sysprog/event-driven-server)
 - https://github.com/cccriscv/mini-riscv-os
 - [Understanding the bin, sbin, usr/bin, usr/sbin split](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html)
+- [OS PPT](https://ocw.nthu.edu.tw/ocw/index.php?page=course_news_content&cid=141&id=999)
