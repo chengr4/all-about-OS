@@ -17,6 +17,14 @@ Scheduling Criteria:
 - First-Come, First-Served (FCFS)
 - Shortest-Job-First (SJF)
 - Priority Scheduling
-- Round Robin (RR)
-- Multilevel Queue Scheduling
+- Round Robin (RR): 輪流分配 CPU 時間
+- Multilevel Queue Scheduling: evey queue can have its own scheduling algorithm
 - Multilevel Feedback Queue Scheduling
+
+如何評估 scheduling algorithm?
+
+1. 定義一個 metric (wait time, response time, turnaround time, throughput, CPU utilization) ...
+2. Deterministic modeling: 模擬提供的 scheduling algorithm
+3. Queuing models: 用數學模型來模擬 (Queuing theory)
+4. 真實模擬
+5. 實作: 與真實情況調整
