@@ -3,6 +3,7 @@
 - Short-term scheduler: selects which process should be executed next and allocates CPU to it. (Ready state => Run state)
 - Long-term scheduler: selects which processes should be **loaded into memory** and brought into the ready queue. (New state => Ready state)
 - Medium-term scheduler: selects which processes should be **swapped in and out** of memory. (Ready state => Wait state)
+- Real-time Scheduling: a process has a "deadline" to complete its execution
 
 Scheduling Criteria:
 
@@ -28,3 +29,8 @@ Scheduling Criteria:
 3. Queuing models: 用數學模型來模擬 (Queuing theory)
 4. 真實模擬
 5. 實作: 與真實情況調整
+
+## Real-Time Scheduling Algorithms
+
+- Rate Monotonic Scheduling (RMS): assign priorities based on the period of the task
+- Earliest Deadline First (EDF): assign priorities based on the deadline of the task
