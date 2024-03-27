@@ -22,3 +22,17 @@ Condition variables represent some **condition** that a thread can:
   1. Wait on, until the condition occurs
   2. Notify other waiting threads that the condition has occurred
 
+- Can make thread pool
+
+## Thread Pool
+
+- Avoid creating and destroying threads frequently
+
+## Semaphores
+
+- A **tool** to generalize the synchronization problem
+- A record of **how many units** of a paritcular resource are available
+    - if #record = 1 => binary semaphore, mutex
+    - if #record > 1 => counting semaphore
+- Two atomic operations: `wait()` and `signal()`
+- Implementation: Spinlock
