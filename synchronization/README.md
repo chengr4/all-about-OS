@@ -35,4 +35,13 @@ Condition variables represent some **condition** that a thread can:
     - if #record = 1 => binary semaphore, mutex
     - if #record > 1 => counting semaphore
 - Two atomic operations: `wait()` and `signal()`
-- Implementation: Spinlock
+- Implementation: Spinlock, put to sleep (non-busy)
+
+## Monitors
+
+A high-level language construct
+
+- similar to Class
+- only one method can be **active** in a monitor at a time
+- Monitor + condition variables is possible
+
