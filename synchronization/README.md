@@ -45,3 +45,22 @@ A high-level language construct
 - only one method can be **active** in a monitor at a time
 - Monitor + condition variables is possible
 
+## Deadlock
+
+A set of blocked processes each **holding** some resources and **waiting** to acquire a resource held by another process in the set.
+
+> resources: a set of code, memory, CPU core
+
+Happens when all of the following conditions are met:
+
+1. Mutex
+2. Hold some resources and wait for another resource 
+3. No preemption (resource can be only released by a process voluntarily)
+4. Circular wait
+
+### Avoidance Algorithms
+
+- Single instance of a resource type
+  - Resource-allocation graph (RAG) algorithm, based on circle detection, O(n^2)
+- Multiple instances of a resource type
+  - Banker's algorithm, based on safe sequence detection
