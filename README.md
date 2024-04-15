@@ -2,9 +2,9 @@
 
 - [I/O](#io)
 
-## Technical Terms
+## Technical Terminology
 
-| Term | Description |
+| Terminology | Description |
 | ---- | ----------- |
 | batch | 批次，one time a job |
 | idle |  閒置 |
