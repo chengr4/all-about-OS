@@ -69,3 +69,5 @@ A file system must be mounted before it can be accessed.
 - I/O transfers between memory and disk are performed in units of blocks (one or more sectors, one sactor is usually 512 bytes)
 - One OS can supprot multiple file systems (NTFS, FAT32)
 
+- [On-Disk Structure](./on_disk_structure.pdf)
+- [File Open and Read](./file_open_read.pdf)
