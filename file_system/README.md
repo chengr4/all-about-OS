@@ -71,3 +71,15 @@ A file system must be mounted before it can be accessed.
 
 - [On-Disk Structure](./on_disk_structure.pdf)
 - [File Open and Read](./file_open_read.pdf)
+
+## Free Space Management
+
+- Bit Vector `bit[i]`: 0 => free, 1 => occupied
+
+## Disk Scheduling
+
+Disk access time:
+
+- seek time: move the disk arm to the desired cylinder (the most important to minimize)
+- rotational latency: wait for the desired sector to rotate under the disk head
+- reda time: content transfer time
