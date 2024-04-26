@@ -2,7 +2,7 @@
 
 - fixed partition and variable partition
 - We create virual memory to enhance the utilization rate of physical memory
-- Demand paging: A page rather than the entire process is brought into meomory only when it isi needed
+- Demand paging: A page rather than the entire process is brought into meomory only when it is needed
 
 ## Page Table
 
